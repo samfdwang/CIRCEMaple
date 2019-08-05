@@ -29,6 +29,7 @@ sys:=map(expand,[coeffs(algeq,[exp(p[1]*x[1] + p[2]*x[2] + p[3]*x[3] + p[4]),seq
 
 #use RealDomain in sol:=solve(sys,{seq(a[i],i=1..4),seq(b[i],i=1..4),seq(c[i],i=1..6),e}) end use
 ;
-sol:=solve(sys,{seq(a[i],i=1..4),seq(b[i],i=1..4),e})
+sol:=solve(sys,{seq(a[i],i=1..4),seq(b[i],i=1..4),seq(c[i],i=1..5),e})
 ;
-
+save sol, "myresult.mpl"
+;
